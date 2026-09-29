@@ -1,2 +1,0 @@
-import { skills } from '@/data/skills';
-export function SkillsMarquee(){return <div className="skillstrip"><span className="skill-label mono">TOOLS OF THE TRADE /</span><div className="ticker" aria-label={`Skills: ${skills.join(', ')}`}><div className="ticker-track" aria-hidden="true">{[...skills,...skills].map((skill,index)=><span key={`${skill}-${index}`}>{skill.toUpperCase()}</span>)}</div></div></div>}
